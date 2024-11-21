@@ -132,7 +132,7 @@ const ImpactSection = () => {
                 2,500+
               </span>
             )}
-          </CountUp>{" "}
+          </CountUp>
           <span className="text-amber-400">{t("peopleJoined")}</span>
         </h3>
         <p className="text-teal-600 font-semibold text-lg">{t("impactStatsDescription")}</p>
