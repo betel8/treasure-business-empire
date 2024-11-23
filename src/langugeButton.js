@@ -5,10 +5,13 @@ import { useTranslation } from "react-i18next";
 
 export default function ChangeLangage (){
   const { i18n } = useTranslation();
-  const [language,setLanguage]=useState("");
+  const [language,setLanguage]=useState("en");
   useEffect(()=>{
     i18n.changeLanguage(language)
   },[language,i18n])
+  useEffect(()=>{
+    i18n.changeLanguage(language)
+  })
 
 
     return(

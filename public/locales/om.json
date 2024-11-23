@@ -1,5 +1,10 @@
 {
-   "Efrata Abebe":"Efrata Abebe",
+    "visionDescription":"Dargaggoonni carraa, meeshaalee, fi qajeelfama dandeettii galii isaanii hiikuu fi walabummaa maallaqaa akka argatan humneessuu.",
+    "goalDescription":"Dargaggoota ga'eessota miliyoona 1 ta'aniif meeshaalee, qabeenya, fi carraa galii isaanii guddisuu fi bara 2030tti walabummaa maallaqaa argachuuf gargaaran kennuu.",
+    "impactDescription":"Dargaggoota ga'eessota sadarkaa addunyaatti carraa jireenya jijjiiru kan fayyaa maallaqaa isaanii olkaasu uumuun humneessuu, milkaa'ina yeroo dheeraa akka argataniifi dhaloonni gara fuula duraa abjuu maallaqaa isaanii akka hordofan kakaasuu.",
+    "impactTitle":"Hawaasa Keenya Guddachaa Jiru",
+    "impactStatsDescription":"Namni tokkoon tokkoon isaa tarkaanfii gara humneessuu, guddina maallaqaa, fi egeree ifa ta'etti fudhatamu bakka bu'a.",
+    "Efrata Abebe":"Efrata Abebe",
     "Melese Debebe":"Melese Debebe",
     "Netsanet Debebe":"Netsanet Debebe",
     "locationButton":"bakka",
@@ -13,5 +18,9 @@
     "secondPara":"Barachuu fi of fooyyessuudhaan ofii keetii best version ta'i.",
     "mainPara":"Har'a tarkaanfii ija jabinaan fudhachuu fi dandeettii kee amanuudhaan egeree kee humneessi.",
     "addis":"Addis ababa",
-    "adama":"Adaamaa"
+    "adama":"Adaamaa",
+    "peopleJoined":"Namoota Dhiibbaa Irra Gahe",
+    "ctaTitle": "Har'a Nu waliin ta'aa!",
+    "ctaDescription": "Qaama hawaasa dargaggoota dhuunfaa kaayyoo maallaqaa isaanii galmaan ga'uuf humna itti kennu ta'i.",
+    "ctaButton": "Jalqaba"
 }

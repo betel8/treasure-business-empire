@@ -1,25 +1,18 @@
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { CiHeadphones } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
 import CountUp from 'react-countup';  // Importing react-countup
-
 import empower from "./empower.jpeg";
 import growth from "./growth.jpeg";
-import afi from "./afi.png";
-import tbefulllogo from "./tbefulllogo.png";
-import bg from "./bg.jpeg";
 import free from "./free.png";
-import visionBg from './visionbg.jpeg';
 import vision from "./vision.png";
 import impact from "./impact.png";
 import goal from "./goal.png";
 
 export default function Home() {
-  const { t } = useTranslation();
 
   return (
-    <section className="w-full flex flex-col justify-center items-center space-y-10">
+    <section className="w-full flex flex-col justify-center items-center ">
       <HeroSection />
       
       <div className="flex flex-wrap justify-center lg:space-x-8">
@@ -42,7 +35,7 @@ export const CallToAction = () => {
 
       <div className="flex flex-col items-center space-y-6">
         {/* Call to Action Button */}
-        <Link to="/contact" class="flex w-40 h-10 justify-center no-underline rounded text-white bg-amber-600 items-center p-1 text-center hover:bg-amber-500 font-extrabold ">{t("Get Started")}</Link>
+        <Link to="/contact" class="flex w-40 h-10 justify-center no-underline rounded text-white bg-amber-600 items-center p-1 text-center hover:bg-amber-500 font-extrabold ">{t("ctaButton")}</Link>
       </div>
     </div>
   );
@@ -50,27 +43,25 @@ export const CallToAction = () => {
 
 const HeroSection = () => {
   const { t } = useTranslation();
-
-  const carouselItems = [
-    { imgSrc: free, slogan: t("freeSlogan"), description: t("freePara"), link: "https:t.me/BetelAmeha" },
-    { imgSrc: empower, slogan: t("mainSlogan"), description: t("mainPara"), link: "https:t.me/BetelAmeha" },
-    { imgSrc: growth, slogan: t("secondSlogan"), description: t("secondPara"), link: "https:t.me/BetelAmeha" }
-  ];
-
   return (
     <Carousel controls={false} className="w-full">
-      {carouselItems.map((item, index) => (
-        <Carousel.Item key={index} className="relative h-[80vh]">
-          <img src={item.imgSrc} alt={item.slogan} className="inset-0 object-cover w-full h-full" loading="lazy" />
-          <div className="absolute inset-0 bg-teal-800/50"></div>
-          <Carousel.Caption className="flex flex-col h-full justify-center items-center">
-            <h1 className="uppercase">{item.slogan}</h1>
-            <p className="text-sm text-teal-100">{item.description}</p>
-            <a href={item.link} target="_blank" rel="noreferrer">
-              <button className="bg-teal-800 text-white px-4 py-2 rounded hover:bg-teal-700 shadow-lg text-xl mt-10 shadow-white">{t("join")}</button>
-            </a>
-          </Carousel.Caption>
-        </Carousel.Item>
+      {
+        [
+          { imgSrc: free, slogan: t("freeSlogan"), description: t("freePara"), link: "https:t.me/BetelAmeha" },
+          { imgSrc: empower, slogan: t("mainSlogan"), description: t("mainPara"), link: "https:t.me/BetelAmeha" },
+          { imgSrc: growth, slogan: t("secondSlogan"), description: t("secondPara"), link: "https:t.me/BetelAmeha" }
+        ].map((item, index) => (
+          <Carousel.Item key={index} className="relative h-[80vh] md:h-[90vh] ">
+            <img src={item.imgSrc} alt={item.slogan} className="inset-0 object-cover w-full h-full" loading="lazy" />
+            <div className="absolute inset-0 bg-teal-800/50"></div>
+            <Carousel.Caption className="flex flex-col h-full justify-center items-center">
+              <h1 className="uppercase font-bold">{item.slogan}</h1>
+              <p className="text-sm text-teal-100">{item.description}</p>
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <button className="bg-teal-800 text-white px-4 py-2 rounded hover:bg-teal-700 shadow-lg text-xl mt-10 shadow-white">{t("join")}</button>
+              </a>
+            </Carousel.Caption>
+          </Carousel.Item>
       ))}
     </Carousel>
   );
@@ -83,7 +74,7 @@ const VisionSection = () => {
     <div className="group hover:scale-105 transition-all duration-300 ease-in-out shadow-md shadow-teal-900 px-4 py-6 w-72 flex flex-col rounded items-center text-center border-t-4 border-amber-400 bg-teal-600 my-10">
       <img src={vision} alt="Vision" className="h-64 w-64 mb-4 group-hover:opacity-80 transition-opacity duration-300 ease-in-out" loading="lazy" />
       <h2 className="text-white uppercase font-extrabold my-2 group-hover:text-teal-900 transition-colors duration-300 ease-in-out">Our <span className="text-teal-900">Vision</span></h2>
-      <p className="text-white mt-2 font-medium group-hover:text-teal-200 transition-colors duration-300 ease-in-out">{t("vision")}</p>
+      <p className="text-white mt-2 font-medium group-hover:text-teal-200 transition-colors duration-300 ease-in-out">{t("visionDescription")}</p>
     </div>
   );
 };
@@ -95,7 +86,7 @@ const GoalSection = () => {
     <div className="group hover:scale-105 transition-all duration-300 ease-in-out shadow-md shadow-teal-900 px-4 py-6 w-72 flex flex-col rounded items-center text-center border-t-4 border-blue-600 bg-teal-600 my-10">
       <img src={goal} alt="Goal" className="h-64 w-64 mb-4 group-hover:opacity-80 transition-opacity duration-300 ease-in-out" loading="lazy" />
       <h2 className="text-white uppercase font-extrabold my-2 group-hover:text-amber-400 transition-colors duration-300 ease-in-out">Our <span className="text-amber-400">Goal</span></h2>
-      <p className="text-white mt-2 font-medium group-hover:text-teal-200 transition-colors duration-300 ease-in-out">{t("goal")}</p>
+      <p className="text-white mt-2 font-medium group-hover:text-teal-200 transition-colors duration-300 ease-in-out">{t("goalDescription")}</p>
     </div>
   );
 };
