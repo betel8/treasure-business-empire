@@ -1,29 +1,39 @@
-import {  useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-
-
-export default function ChangeLangage (){
+export default function ChangeLanguage() {
   const { i18n } = useTranslation();
-  const [language,setLanguage]=useState("en");
-  useEffect(()=>{
-    i18n.changeLanguage(language)
-  },[language,i18n])
-  useEffect(()=>{
-    i18n.changeLanguage(language)
-  })
 
+  // Initialize with the current language from i18n
+  const [language, setLanguage] = useState(i18n.language || "en");
 
-    return(
-            <select className=" h-10  text-amber-400 underline outline-transparent bg-inherit focus:outline-none" 
-            onChange={(e)=>{
-                setLanguage(e.target.value)
-              }
-            }>
-            <option value={"en"}>English</option>
-            <option value={"am"} >አማርኛ</option>
-            <option value={"ti"}>ትግርኛ</option>
-            <option value={"om"}>Afaan Oromoo</option>
-          </select>
-    )
+  // Update the language when it changes
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
+
+  // Language options
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "am", label: "አማርኛ" },
+    { code: "ti", label: "ትግርኛ" },
+    { code: "om", label: "Afaan Oromoo" },
+  ];
+
+  return (
+    <div className="flex flex-col items-start">
+      <select
+        id="language-select"
+        className="h-10 text-amber-400 underline outline-transparent bg-inherit focus:outline-none"
+        value={language}
+        onChange={(e) => setLanguage(e.target.value)}
+      >
+        {languages.map((lang) => (
+          <option key={lang.code} value={lang.code}>
+            {lang.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 }

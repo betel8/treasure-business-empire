@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+    <defs>
+        <pattern id="teal-curvy-lines" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <path d="M0 20 Q10 0 20 20 T40 20" fill="none" stroke="rgba(24, 112, 103, 0.4)" stroke-width="1" />
+        </pattern>
+    </defs>
+    <rect width="1024" height="1024" fill="url(#teal-curvy-lines)" />
+</svg>
