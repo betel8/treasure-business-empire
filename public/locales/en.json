@@ -19,6 +19,14 @@
     "peopleJoined":"People Impacted",
     "ctaTitle": "Join Us Today!",
     "ctaDescription": "Become part of a community that's empowering young individuals to achieve their financial goals.",
-    "ctaButton": "Get Started"
+    "ctaButton": "Get Started",
+    "ourLocation":"Where to Find Us ?",
+    "officeAddis": "Jemo Building <sup>4th</sup> Floor",
+    "detailSub":" Nifas Silk Lafto, Jemo 1",
+    "getDirections":"Get Directions",
+    "directionsButton":"Open in Maps",
+    "officetigray":"Ahadu Bank Building <sup>2nd</sup> Floor",
+    "tigraySub":"Mdre Genet Taxi Station",
+    "tigray":"Mekele"
 }
 

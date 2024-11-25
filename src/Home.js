@@ -35,7 +35,7 @@ const CallToAction = React.memo(() => {
       <p className="text-lg text-teal-100 mb-6">{memoizedT("ctaDescription")}</p>
       <Link
         to="/contact"
-        className="w-40 h-10 flex justify-center items-center rounded text-white bg-amber-600 font-extrabold hover:bg-amber-500"
+        className="no-underline w-40 h-10 flex justify-center items-center text-white bg-amber-600 font-extrabold hover:bg-amber-500"
       >
         {memoizedT("ctaButton")}
       </Link>
@@ -67,7 +67,7 @@ const HeroSection = React.memo(() => {
             <h1 className="uppercase font-bold">{item.slogan}</h1>
             <p className="text-sm text-teal-100">{item.description}</p>
             <a href={item.link} target="_blank" rel="noreferrer">
-              <button className="bg-teal-800 text-white px-4 py-2 rounded hover:bg-teal-700 shadow-lg text-xl mt-10">
+              <button className="bg-teal-800 text-white px-4 py-2 hover:bg-teal-700 shadow-lg text-xl mt-10">
                 {memoizedT("join")}
               </button>
             </a>
@@ -126,7 +126,7 @@ const ImpactSection = React.memo(() => {
         <img
           src={impact}
           alt="Impact"
-          className="h-48 w-48 sm:h-64 sm:w-64 object-contain rounded-lg shadow-lg hover:scale-105 transition duration-300"
+          className="h-48 w-48 sm:h-64 sm:w-64 object-contain  shadow-lg hover:scale-105 transition duration-300"
           loading="lazy"
         />
         {/* Counter */}
@@ -135,7 +135,7 @@ const ImpactSection = React.memo(() => {
             <CountUp start={0} end={62823} duration={5} separator="," delay={0}>
               {({ countUpRef }) => <span ref={countUpRef} className="text-amber-400">2,500+</span>}
             </CountUp>
-            <span className="text-amber-400">{memoizedT("peopleJoined")}</span>
+            <span className="text-amber-400">&nbsp;{memoizedT("peopleJoined")}</span>
           </h3>
           <p className="text-teal-600 font-semibold text-lg">{memoizedT("impactStatsDescription")}</p>
         </div>
@@ -148,7 +148,7 @@ const ImpactSection = React.memo(() => {
 const Container = React.memo(({ img, description, ftitle, stitle, customClass, titleCustomClass }) => {
   return (
     <div
-      className={`group hover:scale-105 transition-all duration-300 shadow-md shadow-teal-900 px-4 w-80 flex flex-col rounded items-center text-center bg-teal-600 my-3 ${customClass}`}
+      className={`group hover:scale-105 transition-all duration-300 shadow-md shadow-teal-900 px-4 w-80 flex flex-col items-center text-center bg-teal-600 my-3 ${customClass}`}
     >
       <img
         src={img}

@@ -16,6 +16,10 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}.json', // Path to translation files
     },
+    react: {
+      transSupportBasicHtmlNodes: true, // Allows basic HTML tags like <br>, <strong>, <sup>, etc.
+      transKeepBasicHtmlNodesFor: ['sup'], // Keeps <sup> as HTML and doesn't escape it
+    },
   });
 
 export default i18n;

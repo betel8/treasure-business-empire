@@ -24,7 +24,17 @@
     "peopleJoined":"ሰዎች ተፅዕኖ ያሳደሩ",
     "ctaTitle": "ዛሬ ይቀላቀሉን!",
     "ctaDescription": "ወጣት ግለሰቦች የገንዘብ ግባቸውን እንዲያሳኩ የሚያበረታታ የማህበረሰብ አካል ይሁኑ።",
-    "ctaButton": "ጀምር"
+    "ctaButton": "ጀምር",
+    "getStarted":"Get Started",
+    "ourLocation":" የት እናገኛለን?",
+    "officeAddis": "ጀሞ ህንፃ <sup>4ኛ</sup>ፎቅ",
+    "detailSub":" ንፋስ ስልክ ላፍቶ፣ ጀሞ 1",
+    "getDirections":"አቅጣጫዎችን ያግኙ",
+    "directionsButton":"በካርታዎች ውስጥ ክፈት",
+    "officetigray":"አሃዱ ባንክ ህንፃ <sup>2ኛ</sup>ፎቅ",
+    "tigraySub":"ምድረ ገነት ታክስ ተራ አሃዱ ባንክ ያለበት ህንፃ",
+    "tigray":"መቀሌ"
+
     
 
 }
