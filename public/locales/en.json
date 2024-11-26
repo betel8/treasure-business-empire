@@ -30,10 +30,13 @@
     "tigray":"Mekele",
     "formTitle":"Register For Free",
     "formSubmitButton":"Register",
-    "formName":"Name",
+    "formName":"Full Name",
     "formPhone":"Phone Number",
     "formCity":"City",
-    "formStatus":"Status"
+    "formStatus":"Status",
+    "formPhoneExample":"Example: 0912345678",
+    "formPhonePlaceholder":"Enter your phone number",
+    "formNamePlaceholder":"Enter your full name"
   }
   
 

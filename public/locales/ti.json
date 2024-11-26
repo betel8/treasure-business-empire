@@ -22,7 +22,13 @@
     "peopleJoined":"ሰባት ዝተጸልዉ",
     "ctaTitle": "ሎሚ ተጸንበሩና!",
     "ctaDescription": "ኣካል ናይቲ ንመንእሰያት ውልቀሰባት ፋይናንሳዊ ዕላማታቶም ንኽወቅዑ ሓይሊ ዝህብ ማሕበረሰብ ኩን።",
-    "ctaButton": "ጀምር"
+    "ctaButton": "ጀምር",
+    "formTitle":"ብነጻ ተመዝገቡ",
+    "formSubmitButton":"ምዝገባ",
+    "formName":"ስም",
+    "formPhone":"ቁጽሪ ስልኪ",
+    "formCity":"ከተማ",
+    "formStatus":"ኩነታት"
 }
 
 

@@ -33,7 +33,13 @@
     "directionsButton":"በካርታዎች ውስጥ ክፈት",
     "officetigray":"አሃዱ ባንክ ህንፃ <sup>2ኛ</sup>ፎቅ",
     "tigraySub":"ምድረ ገነት ታክስ ተራ አሃዱ ባንክ ያለበት ህንፃ",
-    "tigray":"መቀሌ"
+    "tigray":"መቀሌ",
+    "formTitle":"በነጻ ይመዝገቡ",
+    "formSubmitButton":"ይመዝገቡ",
+    "formName":"ስም",
+    "formPhone":"ስልክ ቁጥር",
+    "formCity":"ከተማ",
+    "formStatus":"ሁኔታ"
 
     
 

@@ -13,7 +13,7 @@ const TelegramForm = forwardRef((props, ref) => {
   const [statusMessage, setStatusMessage] = useState(null);
 
   // Use your actual bot token and chat ID here
-  const botToken = "7944171802:AAEPKj7x3JpKyrxjb-F-OmIxQPlIWjyGzoY"; // Replace with your bot token
+  const botToken = "7293515432:AAEWpue19pCDPc8T99sG6TpBJy9Louekl7A"; // Replace with your bot token
   const chatId = "6451696981"; // Replace with your chat ID
 
   const cities = [
@@ -121,7 +121,7 @@ const TelegramForm = forwardRef((props, ref) => {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter your name"
+              placeholder={t("formNamePlaceholder")}
               className="w-full px-4 py-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-teal-400"
             />
             {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
@@ -142,10 +142,10 @@ const TelegramForm = forwardRef((props, ref) => {
                   handleChange(e);
                 }
               }}
-              placeholder="Enter your phone number"
+              placeholder={t("formPhonePlaceholder")}
               className="w-full px-4 py-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-teal-400"
             />
-            <p className="text-gray-500 text-sm mt-1 text-right">Example: 0912345678</p>
+            <p className="text-gray-500 text-sm mt-1 text-right">{t("formPhoneExample")}</p>
             {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone}</p>}
           </div>
 
