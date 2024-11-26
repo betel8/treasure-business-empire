@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,16 +9,23 @@ import free from "./free.png";
 import vision from "./vision.png";
 import impact from "./impact.png";
 import goal from "./goal.png";
+import TelegramForm from "./TelegramForm";
 
 export default function Home() {
+  const targetRef = useRef(null);
+  const scrollToSection = () => {
+    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
-    <section className="w-full flex flex-col justify-center items-center">
-      <HeroSection />
+    <section className="w-full flex flex-col justify-center items-center space-y-2">
+      <HeroSection scrollToSection={scrollToSection} />
+      <TelegramForm ref={targetRef}/>
+      <ImpactSection />
       <div className="flex flex-wrap justify-center lg:space-x-8">
         <VisionSection />
         <GoalSection />
       </div>
-      <ImpactSection />
+      
       <CallToAction />
     </section>
   );
@@ -44,7 +51,7 @@ const CallToAction = React.memo(() => {
 });
 
 // Hero Section with Carousel
-const HeroSection = React.memo(() => {
+const HeroSection = React.memo(({scrollToSection}) => {
   const { t } = useTranslation();
   const memoizedT = useMemo(() => t, [t]);
 
@@ -66,11 +73,13 @@ const HeroSection = React.memo(() => {
           <Carousel.Caption className="flex flex-col h-full justify-center items-center">
             <h1 className="uppercase font-bold">{item.slogan}</h1>
             <p className="text-sm text-teal-100">{item.description}</p>
-            <a href={item.link} target="_blank" rel="noreferrer">
-              <button className="bg-teal-800 text-white px-4 py-2 hover:bg-teal-700 shadow-lg text-xl mt-10">
+            
+              <button 
+                className="bg-teal-800 text-white px-4 py-2 hover:bg-teal-700 shadow-lg text-xl mt-10"
+                onClick={scrollToSection}
+              >
                 {memoizedT("join")}
               </button>
-            </a>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

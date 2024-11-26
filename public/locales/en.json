@@ -27,6 +27,13 @@
     "directionsButton":"Open in Maps",
     "officetigray":"Ahadu Bank Building <sup>2nd</sup> Floor",
     "tigraySub":"Mdre Genet Taxi Station",
-    "tigray":"Mekele"
-}
+    "tigray":"Mekele",
+    "formTitle":"Register For Free",
+    "formSubmitButton":"Register",
+    "formName":"Name",
+    "formPhone":"Phone Number",
+    "formCity":"City",
+    "formStatus":"Status"
+  }
+  
 

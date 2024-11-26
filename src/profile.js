@@ -12,7 +12,7 @@ export default function Profile({ img, name, phone, tg, link, languages, office 
   const langList = useMemo(
     () =>
       languages.map((item, index) => (
-        <span key={index} className="px-3 py-0.5 text-white bg-cyan-500/90 rounded-full">
+        <span key={index} className="h-6 text-white bg-cyan-500/90 rounded px-0.5 text-sm flex items-center">
           {item}
         </span>
       )),
@@ -20,9 +20,9 @@ export default function Profile({ img, name, phone, tg, link, languages, office 
   );
 
   return (
-    <div className="bg-teal-200 shadow-xl shadow-amber-200 rounded text-teal-900 relative">
+    <div className="bg-teal-200 shadow-md  text-teal-900 relative">
       {/* Profile Header */}
-      <h2 className="pl-40 h-20 rounded-t bg-[url('./pattern.svg')] bg-teal-600 text-white font-bold flex items-center text-xl">
+      <h2 className="pl-40 h-20  bg-[url('./pattern.svg')] bg-teal-600 text-white font-bold flex items-center text-xl">
         <MdOutlineSupportAgent />
         &nbsp;{name}
       </h2>
