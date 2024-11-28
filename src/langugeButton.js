@@ -24,7 +24,7 @@ export default function ChangeLanguage() {
     <div className="flex flex-col items-start">
       <select
         id="language-select"
-        className="h-10 text-amber-400 underline outline-transparent bg-inherit focus:outline-none"
+        className="no-underline h-10 text-amber-400 underline outline-transparent bg-inherit focus:outline-none"
         value={language}
         onChange={(e) => setLanguage(e.target.value)}
       >

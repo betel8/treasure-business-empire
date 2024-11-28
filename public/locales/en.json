@@ -51,7 +51,10 @@
     "cityOptionTen": "Harari",
     "cityOptionEleven": "Sidama",
     "cityOptionTwelve": "South West Ethiopia Peoples' Region",
-    "cityOptionThirteen": "Southern Nations, Nationalities, and Peoples' Region (SNNPR)"
+    "cityOptionThirteen": "Southern Nations, Nationalities, and Peoples' Region (SNNPR)",
+    "addisButton": "Addis Ababa",
+    "mekeleButton": "Mekele ",
+    "adamaButton": "Adama "
   }
   
 

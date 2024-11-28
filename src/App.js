@@ -46,7 +46,7 @@ export default function App (){
               </Link>
               <div className="flex h-10 w-auto space-x-1">
                 
-                <Link to={'./location'} className=" h-10 flex text-amber-400 hover:bg-amber-400 hover:text-white hover:border-amber-400 border border-amber-600 text-center font-medium p-1 items-center w-24">
+                <Link to={'./location'} className="no-underline h-10 flex text-amber-400 hover:bg-amber-400 hover:text-white hover:border-amber-400 border border-amber-600 text-center font-medium p-1 items-center w-24">
                   <FaMapLocationDot className="mr-1"/>
                   {t('locationButton')}
                 </Link>
