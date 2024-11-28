@@ -38,8 +38,26 @@
     "formSubmitButton":"ይመዝገቡ",
     "formName":"ስም",
     "formPhone":"ስልክ ቁጥር",
-    "formCity":"ከተማ",
-    "formStatus":"ሁኔታ"
+    "formCity": "ክልል",
+    "formStatus":"ሁኔታ",
+    "formPhoneExample":"ምሳሌ: 0912345678",
+    "formPhonePlaceholder":"ስልክ ቁጥርህን አስገባ",
+    "formNamePlaceholder":"ሙሉ ስምህን አስገባ",        
+    "cityPlaceholder": "ክልል ይምረጡ",
+    "statusPlaceholder": "ሁኔታ ይምረጡ",
+    "cityOptionOne": "አዲስ አበባ",
+    "cityOptionTwo": "ድሬዳዋ",
+    "cityOptionThree": "ትግራይ",
+    "cityOptionFour": "አፋር",
+    "cityOptionFive": "አማራ",
+    "cityOptionSix": "ኦሮሚያ",
+    "cityOptionSeven": "ሶማሌ",
+    "cityOptionEight": "ቤንሻንጉል-ጉሙዝ",
+    "cityOptionNine": "ጋምቤላ",
+    "cityOptionTen": "ሐረሪ",
+    "cityOptionEleven": "ሲዳማ",
+    "cityOptionTwelve": "ደቡብ ምሁራን ሕዝቦች ክልል (ደምሕክ)",
+    "cityOptionThirteen": "ደቡብ ምህዳሩ ኢትዮጵያ ሕዝቦች ክልል"
 
     
 

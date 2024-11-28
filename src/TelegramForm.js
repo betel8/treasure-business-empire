@@ -17,16 +17,17 @@ const TelegramForm = forwardRef((props, ref) => {
   const chatId = "750351587"; // Replace with your chat ID
 
   const cities = [
-    "Addis Ababa",
-    "Dire Dawa",
-    "Mekelle",
-    "Gondar",
-    "Bahir Dar",
-    "Hawassa",
-    "Adama",
-    "Jimma",
-    "Dessie",
-    "Harar",
+    t("cityOptionOne"),
+    t("cityOptionTwo"),
+    t("cityOptionThree"),
+    t("cityOptionFour"),
+    t("cityOptionFive"),
+    t("cityOptionSix"),
+    t("cityOptionSeven"),
+    t("cityOptionEight"),
+    t("cityOptionNine"),
+    t("cityOptionTen"),
+
   ];
 
   const statuses = ["Unemployed", "Student", "Employed", "Business Owner"];
@@ -161,7 +162,7 @@ const TelegramForm = forwardRef((props, ref) => {
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-teal-400"
             >
-              <option value="" disabled>Select a city</option>
+              <option value="" disabled>{t("cityPlaceholder")}</option>
               {cities.map((city, index) => (
                 <option key={index} value={city}>
                   {city}
@@ -183,7 +184,7 @@ const TelegramForm = forwardRef((props, ref) => {
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-teal-400"
             >
-              <option value="" disabled>Select your status</option>
+              <option value="" disabled>{t("statusPlaceholder")}</option>
               {statuses.map((status, index) => (
                 <option key={index} value={status}>
                   {status}

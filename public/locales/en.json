@@ -32,11 +32,26 @@
     "formSubmitButton":"Register",
     "formName":"Full Name",
     "formPhone":"Phone Number",
-    "formCity":"City",
+    "formCity":"State",
     "formStatus":"Status",
     "formPhoneExample":"Example: 0912345678",
     "formPhonePlaceholder":"Enter your phone number",
-    "formNamePlaceholder":"Enter your full name"
+    "formNamePlaceholder":"Enter your full name",
+    "cityPlaceholder": "Select a state",
+    "statusPlaceholder": "Select your status",
+    "cityOptionOne": "Addis Ababa",
+    "cityOptionTwo": "Dire Dawa",
+    "cityOptionThree": "Tigray",
+    "cityOptionFour": "Afar",
+    "cityOptionFive": "Amhara",
+    "cityOptionSix": "Oromia",
+    "cityOptionSeven": "Somali",
+    "cityOptionEight": "Benishangul-Gumuz",
+    "cityOptionNine": "Gambela",
+    "cityOptionTen": "Harari",
+    "cityOptionEleven": "Sidama",
+    "cityOptionTwelve": "South West Ethiopia Peoples' Region",
+    "cityOptionThirteen": "Southern Nations, Nationalities, and Peoples' Region (SNNPR)"
   }
   
 
