@@ -73,7 +73,7 @@ const TelegramForm = forwardRef(({}, ref) => {
           <AiOutlineCheckCircle className="text-green-500" size={48} />
           <span className="ml-2 text-green-500 font-semibold text-lg">
            {setStatusMessage(" Your information has been received successfully!")}<br/>
-            Our Brand Builder get to you in next few days
+            Our Brand Builder will get to you in next few days
           </span>
         </div>
         )
