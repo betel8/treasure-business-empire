@@ -4,7 +4,7 @@ import { IoIosPin } from "react-icons/io";
 import jemoMap from "./map jemo.png";
 import romanat from "./romanat.png";
 import { HiOfficeBuilding } from "react-icons/hi";
-
+import AdamaMap from "./adamaMap.png"
 export default function Location() {
   const { t } = useTranslation();
   
@@ -31,7 +31,7 @@ export default function Location() {
       ref: mekeleRef,
     },
     {
-      map: romanat,
+      map: AdamaMap,
       building: "officeAdama",
       city: t("Adama"),
       sub: t("AdamaSub"),

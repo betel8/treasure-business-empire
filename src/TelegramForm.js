@@ -2,7 +2,8 @@ import React, { forwardRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 
-const TelegramForm = forwardRef(({}, ref) => {
+
+const TelegramForm = forwardRef((_, ref) => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
